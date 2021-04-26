@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Школа актерского мастерства АртСтудия</title>
+    
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+</head>
+
+<body>
+
+
+    <div id='firstpart'>
+        <div class='container'>
+            <div class="row">
+                <div class="wrap">
+                    <h2 class='text'>Школа актерского мастерства</h2>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div id='secondpart'>
+
+        <div class="container">
+            <div class="section">
+                <hr>
+                <h3>Школа актерского мастерства для детей от 12 до 17 лет в <u>АртСтудии</u></h3>
+                <div class="text_column">
+                    <p>
+                        В процессе обучения учащиеся развивают речь, воображение и критическое мышление, раскрывают свой
+                        творческий потенциал. Снимаются в своем первом кино.
+                    </p>
+                    <p>
+                        Для студентов актерского отделения предусмотрена практика в проектах киностудии.
+                    </p>
+                </div>
+                <div class="text_column">
+                    <ul>
+                        <li>обучение в условиях действующего кинопроизводства (киностудия располагает всем необходимым
+                            оборудованием)</li>
+                        <li>практикующие специалисты в области кинематографа, а также преподаватели университетов</li>
+                        <li>профессиональные преподаватели-актёры с опытом работы в кино и театре</li>
+                    </ul>
+                </div>
+                <div class="infoblock">
+                    <div class="schedule">
+                        <h3>Расписание</h3>
+                        <p>Пт. с 18:00 до 19:30</p>
+                        <p>Вс. с 15:30 до 17:00</p>
+                    </div>
+                    <div class="pricing">
+                        <h3>Стоимость</h3>
+                        <h4>Абонемент на семестр (30 ак.ч)</h4>
+                        <div class="price">
+                            <p><i>16 800 рублей</i></p>
+                            <p class="oldprice"><s>24 000 рублей</s></p>
+                        </div>
+                        <h4>Абонемент на год (60 ак.ч)</h4>
+                        <div class="price">
+                            <p><i>27 200 рублей</i></p>
+                            <p class="oldprice"><s>24 000 рублей</s></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="wrapper cert">
+        <p class="cert_text">
+            По окончании школы актерского мастерства выдаются сертификаты о получении дополнительного образованиия в АртСтудии 
+        </p>
+    </div>
+
+    <div class="contactus">
+        <div class="request_form">
+            <h3 id='request_status'>Оставить заявку</h3>
+            <form action="#" method="post">
+                <h4>ФИО</h4>
+                <input required type="text" name="name" class="input" id='name'>
+                <h4>E-MAIL</h4>
+                <input required type="email" name="email" class="input" id='email'>
+                <h4>Номер телефона</h4>
+                <input required type="tel" name="phone" class="input" id='phone'>
+                <h4>Комментарий</h4>
+                <input type="text" name='question' class="input" id='commentary'>
+                <input type="button" value="Отправить" id='submit_button' class="submit">
+
+            </form>
+        </div>
+        <div class="contacts">
+            <div class="contacts_contacts">
+                <h2>Контакты</h3>
+                <h3>Менеджеры:</h3>
+                <p class='contacts_phone'>+7(999)-000-00-00 Марина</p>
+                <p class='contacts_phone'>+7(999)-000-00-00 Алексей</p>
+                <p class="contacts_mail">edu@artstudio.ru</p>
+            </div>
+            <div id='map'>
+                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Af7e55f84f80ccfa72e734851fb602a14d10b1c55930d185574c7349219772e21&amp;source=constructor" frameborder="0"></iframe>
+            </div>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+
+</html>
